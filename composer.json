@@ -1,0 +1,14 @@
+{
+    "name": "itk-os2display/quill-editor-bundle",
+    "description": "Os2Display Quill editor",
+    "type": "symfony-bundle",
+    "require": {
+        "os2display/admin-bundle": "^1.0",
+        "os2display/core-bundle": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Itk\\QuillEditorBundle\\": ""
+        }
+    }
+}
