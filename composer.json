@@ -3,7 +3,7 @@
     "description": "Os2Display Quill editor",
     "type": "symfony-bundle",
     "require": {
-        "os2display/admin-bundle": "^1.0",
+        "os2display/admin-bundle": "^1.0.10",
         "os2display/core-bundle": "^1.0"
     },
     "autoload": {
