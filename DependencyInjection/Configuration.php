@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('itk_quill_editor');
+        $rootNode = $treeBuilder->root('itk_template_extension');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for
