@@ -1,6 +1,6 @@
 console.log("loaded");
 
-angular.module('quillModule').directive('quillText', function(){
+angular.module('templateExtensionModule').directive('quillText', function(){
   return {
     restrict: 'E',
     replace: true,
