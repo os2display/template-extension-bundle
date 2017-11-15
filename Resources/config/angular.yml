@@ -12,12 +12,12 @@ assets:
     - bundles/itktemplateextension/assets/build/itktemplateextension.min.js
 
 modules:
-  quillModule:
+  templateExtensionModule:
     files:
+      - bundles/itktemplateextension/apps/templateExtensionModule/template-extension-module.js
       - bundles/itktemplateextension/apps/templateExtensionModule/quill-text.js
 
 apps:
   ikApp:
     dependencies:
-      - ngQuill
       - templateExtensionModule
