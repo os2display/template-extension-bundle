@@ -2,6 +2,12 @@
 
 ## In develop
 
+## 1.1.1
+
+* Fixed module name.
+
+## 1.1.0
+
 * Renamed bundle to Template Extension Bundle.
 * Added quill-text editor.
 
