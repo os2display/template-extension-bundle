@@ -1,6 +1,6 @@
 <?php
 
-namespace Itk\QuillEditorBundle\DependencyInjection;
+namespace Itk\TemplateExtensionBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Os2Display\CoreBundle\DependencyInjection\Os2DisplayBaseExtension;
@@ -10,7 +10,7 @@ use Os2Display\CoreBundle\DependencyInjection\Os2DisplayBaseExtension;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class ItkQuillEditorExtension extends Os2DisplayBaseExtension
+class ItkTemplateExtensionExtension extends Os2DisplayBaseExtension
 {
     /**
      * {@inheritdoc}

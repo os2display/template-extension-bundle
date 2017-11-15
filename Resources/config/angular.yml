@@ -1,19 +1,23 @@
-## Adds ngQuill as a dependency of ikApp.
-
 assets:
   js:
-    - bundles/itkquilleditor/assets/libs/quill.min.js
-    - bundles/itkquilleditor/assets/libs/ng-quill.min.js
+    - bundles/itktemplateextension/assets/libs/quill.min.js
+    - bundles/itktemplateextension/assets/libs/ng-quill.min.js
   css:
-    - bundles/itkquilleditor/css/quill.core.css
-    - bundles/itkquilleditor/css/quill.snow.css
+    - bundles/itktemplateextension/css/quill.core.css
+    - bundles/itktemplateextension/css/quill.snow.css
   js_prod_assets:
-    - bundles/itkquilleditor/assets/libs/quill.min.js
-    - bundles/itkquilleditor/assets/libs/ng-quill.min.js
+    - bundles/itktemplateextension/assets/libs/quill.min.js
+    - bundles/itktemplateextension/assets/libs/ng-quill.min.js
+  js_prod:
+    - bundles/itktemplateextension/assets/build/itktemplateextension.min.js
 
 modules:
+  quillModule:
+    files:
+      - bundles/itktemplateextension/apps/templateExtensionModule/quill-text.js
 
 apps:
   ikApp:
     dependencies:
       - ngQuill
+      - templateExtensionModule
