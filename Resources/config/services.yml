@@ -1,4 +1,4 @@
 services:
 #    itk_quill_editor.example:
-#        class: Itk\QuillEditorBundle\Example
+#        class: Itk\TemplateExtensionBundle\Example
 #        arguments: [@service_id, "plain_value", %parameter%]

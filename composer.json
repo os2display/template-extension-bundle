@@ -1,6 +1,6 @@
 {
-    "name": "itk-os2display/quill-editor-bundle",
-    "description": "Os2Display Quill editor",
+    "name": "itk-os2display/template-extension-bundle",
+    "description": "Os2Display Template Extension Bundle contains tools for templates.",
     "type": "symfony-bundle",
     "require": {
         "os2display/admin-bundle": "^1.0.10",
@@ -8,7 +8,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Itk\\QuillEditorBundle\\": ""
+            "Itk\\TemplateExtensionBundle\\": ""
         }
     }
 }

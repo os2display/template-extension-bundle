@@ -1,6 +1,6 @@
 <?php
 
-namespace Itk\QuillEditorBundle\DependencyInjection;
+namespace Itk\TemplateExtensionBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
