@@ -5,6 +5,7 @@ assets:
   css:
     - bundles/itktemplateextension/css/quill.core.css
     - bundles/itktemplateextension/css/quill.snow.css
+    - bundles/itktemplateextension/assets/build/itktemplateextension.min.css
   js_prod_assets:
     - bundles/itktemplateextension/assets/libs/quill.min.js
     - bundles/itktemplateextension/assets/libs/ng-quill.min.js
@@ -14,7 +15,7 @@ assets:
 modules:
   templateExtensionModule:
     files:
-      - bundles/itktemplateextension/apps/templateExtensionModule/template-extension-module.js
+      - bundles/itktemplateextension/apps/templateExtensionModule/module.js
       - bundles/itktemplateextension/apps/templateExtensionModule/quill-text.js
 
 apps:
