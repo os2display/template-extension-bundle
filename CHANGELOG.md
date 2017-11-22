@@ -2,7 +2,7 @@
 
 ## In develop
 
-## 1.1.2
+## 1.1.4
 
 * Added itk-koba-resource-picker tool.
 * Added button to bottom of quill-editor.
