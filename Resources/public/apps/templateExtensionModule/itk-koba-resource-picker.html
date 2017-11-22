@@ -1,0 +1,19 @@
+<div class="itk-template-extension--tool" data-ng-class="{'open': open, 'close': !open}">
+  <div class="itk-template-extension--tool-header">
+    <div class="itk-template-extension--button" data-ng-click="closeTool()">
+      Afslut
+    </div>
+  </div>
+
+  <h1>Vælg lokaler</h1>
+
+  <div class="itk-template-extension--tool-section">
+    <h2 class="itk-template-extension--tool-headline">Angiv hvilke lokalers begivenheder skal vises.</h2>
+    <ik-checklist elements="availableResources" selected="slide.options.resources" identity="'mail'"></ik-checklist>
+  </div>
+
+  <div class="itk-template-extension--button" data-ng-click="closeTool()">
+    Afslut
+  </div>
+
+</div>

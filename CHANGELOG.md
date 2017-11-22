@@ -2,6 +2,11 @@
 
 ## In develop
 
+## 1.1.2
+
+* Added itk-koba-resource-picker tool.
+* Added button to bottom of quill-editor.
+
 ## 1.1.1
 
 * Fixed module name.
