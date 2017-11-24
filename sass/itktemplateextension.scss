@@ -1,4 +1,10 @@
 .itk-template-extension {
+  &--content {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
   &--tool {
     overflow: scroll;
     text-align: left;

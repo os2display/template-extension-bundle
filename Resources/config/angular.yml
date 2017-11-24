@@ -18,6 +18,7 @@ modules:
       - bundles/itktemplateextension/apps/templateExtensionModule/module.js
       - bundles/itktemplateextension/apps/templateExtensionModule/quill-text.js
       - bundles/itktemplateextension/apps/templateExtensionModule/itk-koba-resource-picker.js
+      - bundles/itktemplateextension/apps/templateExtensionModule/itk-text-array.js
 
 apps:
   ikApp:

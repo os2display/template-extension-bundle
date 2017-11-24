@@ -8,16 +8,6 @@ angular.module('templateExtensionModule').directive('quillText', [
         close: '&'
       },
       link: function (scope, element, attrs) {
-        scope.open = true;
-
-        scope.closeTool = function () {
-          $timeout(function() {
-            scope.open = false;
-
-            $timeout(scope.close, 600);
-          });
-        };
-
         /**
          * Callback when Quill editor has been created.
          * @param editor
