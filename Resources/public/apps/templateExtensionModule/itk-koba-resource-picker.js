@@ -10,16 +10,6 @@ angular.module('templateExtensionModule')
         template: '@'
       },
       link: function (scope) {
-        scope.open = true;
-
-        scope.closeTool = function () {
-          $timeout(function() {
-            scope.open = false;
-
-            $timeout(scope.close, 600);
-          });
-        };
-
         // Reset resources.
         scope.availableResources = [];
 
