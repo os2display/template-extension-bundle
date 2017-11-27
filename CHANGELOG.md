@@ -2,10 +2,14 @@
 
 ## In develop
 
-## 1.1.5
+## 1.1.6
 
 * Fixed overflow for tools.
 * Added allowed formats for quill editor, to avoid copy/paste issues.
+
+## 1.1.5
+
+* Reverted to previous tool look.
 
 ## 1.1.4
 
