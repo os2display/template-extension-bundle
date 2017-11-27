@@ -14,6 +14,14 @@
         <div class="edit-menu--background-content">
           <button class="edit-menu--background-button" data-ng-click="pickFromMedia()">Vælg fil fra medier</button>
           <button class="edit-menu--background-button" data-ng-click="pickFromComputer()">Vælg fil fra computer</button>
+
+          <div data-ng-if="slide.media && slide.media.length > 0">
+            <h2 class="edit-menu--background-header">Valgt medie</h2>
+            <div>
+              <img data-ng-src="{{slide.currentImage}}" style="max-width: 500px;">
+            </div>
+            <button class="itk-template-extension--button-remove" data-ng-click="slide.media = []">Fjern fra slide</button>
+          </div>
         </div>
       </div>
     </div>

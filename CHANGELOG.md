@@ -8,6 +8,7 @@
 * Added allowed formats for quill editor, to avoid copy/paste issues.
 * Renamed quill-editor to itk-rich-text.
 * Made fontsize editor optional for itk-rich-text.
+* Added background-editor without background-color editor.
 
 ## 1.1.5
 
