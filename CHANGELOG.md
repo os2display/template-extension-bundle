@@ -6,6 +6,8 @@
 
 * Fixed overflow for tools.
 * Added allowed formats for quill editor, to avoid copy/paste issues.
+* Renamed quill-editor to itk-rich-text.
+* Made fontsize editor optional for itk-rich-text.
 
 ## 1.1.5
 
@@ -23,7 +25,7 @@
 ## 1.1.0
 
 * Renamed bundle to Template Extension Bundle.
-* Added quill-text editor.
+* Added itk-rich-text editor.
 
 ## 1.0.0
 
