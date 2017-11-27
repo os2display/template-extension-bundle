@@ -2,6 +2,11 @@
 
 ## In develop
 
+## 1.1.5
+
+* Fixed overflow for tools.
+* Added allowed formats for quill editor, to avoid copy/paste issues.
+
 ## 1.1.4
 
 * Added itk-koba-resource-picker tool.

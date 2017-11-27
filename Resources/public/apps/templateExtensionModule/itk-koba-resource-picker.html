@@ -10,23 +10,23 @@
       </div>
     </div>
     <div class="edit-menu--background-page">
-      <div
-          class="edit-menu--background-page-inner itk-template-extension--content">
-        <h2 class="edit-menu--background-header">Vælg lokaler</h2>
+      <div class="edit-menu--background-page-inner">
+        <div class="itk-template-extension--content">
+          <h2 class="edit-menu--background-header">Vælg lokaler</h2>
 
-        <div class="itk-template-extension--tool-section">
-          <h2 class="itk-template-extension--tool-headline">
-            Angiv hvilke lokalers begivenheder skal vises.
-          </h2>
-          <ik-checklist elements="availableResources"
-                        selected="slide.options.resources"
-                        identity="'mail'"></ik-checklist>
+          <div class="itk-template-extension--tool-section">
+            <h2 class="itk-template-extension--tool-headline">
+              Angiv hvilke lokalers begivenheder skal vises.
+            </h2>
+            <ik-checklist elements="availableResources"
+                          selected="slide.options.resources"
+                          identity="'mail'"></ik-checklist>
+          </div>
+
+          <div class="itk-template-extension--button" data-ng-click="close()">
+            Afslut
+          </div>
         </div>
-
-        <div class="itk-template-extension--button" data-ng-click="close()">
-          Afslut
-        </div>
-
       </div>
     </div>
   </div>
