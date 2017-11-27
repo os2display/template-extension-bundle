@@ -10,39 +10,39 @@
       </div>
     </div>
     <div class="edit-menu--background-page">
-      <div
-          class="edit-menu--background-page-inner itk-template-extension--content">
-        <h2 class="edit-menu--background-header">Tekster</h2>
+      <div class="edit-menu--background-page-inner">
+        <div class="itk-template-extension--content">
+          <h2 class="edit-menu--background-header">Tekster</h2>
 
-        <div class="itk-template-extension--tool-section">
-          <h2 class="itk-template-extension--tool-headline">Tilføj tekst</h2>
+          <div class="itk-template-extension--tool-section">
+            <h2 class="itk-template-extension--tool-headline">Tilføj tekst</h2>
 
-          <label for="text">Tekst</label>
-          <input id="text" type="text" ng-model="newText.text">
-          <label for="author">Afsender</label>
-          <input id="author" type="text" ng-model="newText.author">
-          <div class="itk-template-extension--button" ng-click="addText()">
-            + Tilføj tekst
-          </div>
-        </div>
-
-        <div class="itk-template-extension--tool-section">
-          <h2 class="itk-template-extension--tool-headline">Valgte tekster</h2>
-
-          <div ng-repeat="text in slide.options.texts track by $index">
-            <div>"{{slide.options.texts[$index].text}}" -
-              {{slide.options.texts[$index].author}}
-            </div>
-            <div class="itk-template-extension--button-remove"
-                 ng-click="removeText($index)">- Fjern tekst
+            <label for="text">Tekst</label>
+            <input id="text" type="text" ng-model="newText.text">
+            <label for="author">Afsender</label>
+            <input id="author" type="text" ng-model="newText.author">
+            <div class="itk-template-extension--button" ng-click="addText()">
+              + Tilføj tekst
             </div>
           </div>
-        </div>
 
-        <div class="itk-template-extension--button" data-ng-click="close()">
-          Afslut
-        </div>
+          <div class="itk-template-extension--tool-section">
+            <h2 class="itk-template-extension--tool-headline">Valgte tekster</h2>
 
+            <div ng-repeat="text in slide.options.texts track by $index">
+              <div>"{{slide.options.texts[$index].text}}" -
+                {{slide.options.texts[$index].author}}
+              </div>
+              <div class="itk-template-extension--button-remove"
+                   ng-click="removeText($index)">- Fjern tekst
+              </div>
+            </div>
+          </div>
+
+          <div class="itk-template-extension--button" data-ng-click="close()">
+            Afslut
+          </div>
+        </div>
       </div>
     </div>
   </div>
