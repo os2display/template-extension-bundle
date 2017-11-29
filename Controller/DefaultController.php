@@ -111,6 +111,10 @@ class DefaultController extends Controller
                         'text' => 'White',
                         'value' => '#fff'
                     ],
+                    (object)[
+                        'text' => 'Black',
+                        'value' => '#333'
+                    ],
                 ]
             ]
         );
