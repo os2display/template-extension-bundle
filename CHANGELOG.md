@@ -2,6 +2,10 @@
 
 ## In develop
 
+## 1.1.7
+
+* Added text color black.
+
 ## 1.1.6
 
 * Fixed overflow for tools.
