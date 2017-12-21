@@ -1,0 +1,56 @@
+<div class="edit-menu--background" role="banner">
+  <div class="edit-menu--background-inner">
+    <div class="edit-menu--toggle-icon" data-ng-click="close()">
+      <div class="svg-clickable">
+        <object data="bundles/os2displayadmin/images/svg/cancel.svg" type="image/svg+xml">
+          <!-- Fallback (ie8)-->
+          <img src="bundles/os2displayadmin/images/cancel.png"/>
+        </object>
+      </div>
+    </div>
+    <div class="edit-menu--background-page" data-ng-if="!step">
+      <div class="edit-menu--background-page-inner">
+        <div class="itk-template-extension--content" data-ng-repeat="field in fields">
+          <h2 class="edit-menu--background-header">{{field.name}}</h2>
+
+          <div class="itk-template-extension--tool-section">
+            <img data-ng-src="{{slide.media[slide.options[field.field]].urls.default_landscape}}" data-ng-if="slide.media[slide.options[field.field]].media_type === 'image'">
+            <button class="edit-menu--background-button"
+                    data-ng-click="backgroundPicker(field.field, field.media_type)">
+              Vælg
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="edit-menu--background-page" data-ng-if="step">
+      <div class="edit-menu--background-image-back" data-ng-click="back()">
+        <div class="svg-clickable">
+          <object data="bundles/os2displayadmin/images/svg/back.svg" type="image/svg+xml">
+            <!-- Fallback (ie8)-->
+            <img src="bundles/os2displayadmin/images/back.png"/>
+          </object>
+        </div>
+        <h2 data-ng-click="back()">Tilbage</h2>
+      </div>
+      <div class="edit-menu--background-page-inner" data-ng-if="step === 'background-picker'">
+        <h3 class="edit-menu--background-header">Vælg medie</h3>
+        <div class="edit-menu--background-content">
+          <button class="edit-menu--background-button" data-ng-click="pickFromMedia()">Vælg fil fra medier</button>
+          <button class="edit-menu--background-button" data-ng-click="pickFromComputer()">Vælg fil fra computer</button>
+        </div>
+      </div>
+      <div class="edit-menu--background-page-inner" data-ng-if="step === 'pick-from-media'">
+        <h3 class="edit-menu--background-header">Vælg fil fra mediearkiv</h3>
+        <ik-media-overview ik-media-type="selectedMediaType" ik-auto-search="false" ik-hide-filters="true"
+                           ik-selected-media="selectedMedia"></ik-media-overview>
+      </div>
+      <div class="edit-menu--background-page-inner" data-ng-if="step === 'pick-from-computer'">
+        <h3 class="edit-menu--background-header">Vælg fil fra computer</h3>
+        <div class="edit-menu--background-content-alternate">
+          <ik-media-upload ik-upload-type="selectedMediaType"></ik-media-upload>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
