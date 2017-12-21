@@ -2,6 +2,10 @@
 
 ## In develop
 
+## 1.1.8
+
+* Added itk-media-picker for selecting configurable amount off media.
+
 ## 1.1.7
 
 * Added text color black.
