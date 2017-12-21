@@ -2,6 +2,10 @@
 
 ## In develop
 
+## 1.1.9
+
+* Minified js.
+
 ## 1.1.8
 
 * Added itk-media-picker for selecting configurable amount off media.
