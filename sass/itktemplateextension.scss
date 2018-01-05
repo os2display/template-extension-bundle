@@ -97,4 +97,9 @@
   &--button-remove:hover {
     background-color: #800000;
   }
+
+  &--media-picker-image {
+    max-height: 300px;
+    display: block;
+  }
 }

@@ -57,6 +57,17 @@ angular.module('templateExtensionModule').directive('itkMediaPicker', [
         scope.selectedMediaType = null;
 
         /**
+         * Remove the media from the given index.
+         *
+         * @param pickedIndex The index to remove.
+         */
+        scope.removeMedia = function(pickedIndex) {
+          scope.slide.options[pickedIndex] = null;
+
+          cleanupMediaList(scope.slide.media);
+        };
+
+        /**
          * Set the step to background-picker.
          */
         scope.backgroundPicker = function backgroundPicker(pickedIndex, mediaType) {
@@ -96,6 +107,41 @@ angular.module('templateExtensionModule').directive('itkMediaPicker', [
           index = null;
         };
 
+        function cleanupMediaList(mediaList) {
+          // Cleanup media list
+          var usedMedia = [];
+          for (var key = mediaList.length - 1; key >= 0; key--) {
+            var used = false;
+            var field = null;
+
+            // Is the media used by a field?
+            for (field in scope.fields) {
+              if (scope.fields.hasOwnProperty(field)) {
+                field = scope.fields[field];
+                if (scope.slide.options[field.field] === key) {
+                  usedMedia.push(mediaList[key]);
+                  used = true;
+                }
+              }
+            }
+
+            // If not in use, remove the media from the list.
+            if (!used) {
+              mediaList.splice(key, 1);
+
+              // Decrement field media indexes greater than the removed media index.
+              for (field in scope.fields) {
+                if (scope.fields.hasOwnProperty(field)) {
+                  field = scope.fields[field];
+                  if (scope.slide.options[field.field] > key) {
+                    scope.slide.options[field.field] = scope.slide.options[field.field] - 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+
         /**
          * Add a media from scope.slide.media.
          *
@@ -112,7 +158,7 @@ angular.module('templateExtensionModule').directive('itkMediaPicker', [
 
             if (media.id === clickedMedia.id) {
               found = true;
-              mediaIndex = i;
+              mediaIndex = parseInt(i);
             }
             mediaList.push(media);
           }
@@ -125,38 +171,10 @@ angular.module('templateExtensionModule').directive('itkMediaPicker', [
 
           scope.slide.options[index] = mediaIndex;
 
-          // Cleanup media list
-          var usedMedia = [];
-          for (var key = mediaList.length - 1; key >= 0; key--) {
-            var used = false;
-
-            // Is the media used by a field?
-            for (var field in scope.fields) {
-              field = scope.fields[field];
-              if (scope.slide.options[field.field] === key) {
-                usedMedia.push(mediaList[key]);
-                used = true;
-              }
-            }
-
-            // If not in use, remove the media from the list.
-            if (!used) {
-              mediaList.splice(key, 1);
-
-              // Decrement field media indexes greater than the removed media index.
-              for (var field in scope.fields) {
-                field = scope.fields[field];
-                if (scope.slide.options[field.field] > key) {
-                  scope.slide.options[field.field] = scope.slide.options[field.field] - 1;
-                }
-              }
-            }
-          }
+          cleanupMediaList(mediaList);
 
           scope.step = null;
           scope.slide.media = mediaList;
-
-          console.log(scope.slide);
         };
 
         // Register event listener for select media.
@@ -187,7 +205,6 @@ angular.module('templateExtensionModule').directive('itkMediaPicker', [
             scope.close();
           }
         });
-
       },
       templateUrl: '/bundles/itktemplateextension/apps/templateExtensionModule/itk-media-picker.html'
     };

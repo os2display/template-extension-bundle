@@ -10,14 +10,20 @@
     </div>
     <div class="edit-menu--background-page" data-ng-if="!step">
       <div class="edit-menu--background-page-inner">
-        <div class="itk-template-extension--content" data-ng-repeat="field in fields">
-          <h2 class="edit-menu--background-header">{{field.name}}</h2>
+        <h2 class="edit-menu--background-header">Billedevælger</h2>
 
+        <div class="itk-template-extension--content" data-ng-repeat="field in fields">
           <div class="itk-template-extension--tool-section">
-            <img data-ng-src="{{slide.media[slide.options[field.field]].urls.default_landscape}}" data-ng-if="slide.media[slide.options[field.field]].media_type === 'image'">
-            <button class="edit-menu--background-button"
+            <h2 class="itk-template-extension--tool-headline">{{field.name}}</h2>
+
+            <img class="itk-template-extension--media-picker-image" data-ng-src="{{slide.media[slide.options[field.field]].urls.default_landscape}}" data-ng-if="slide.media[slide.options[field.field]].media_type === 'image'">
+            <button class="itk-template-extension--button"
                     data-ng-click="backgroundPicker(field.field, field.media_type)">
-              Vælg
+              {{ slide.media[slide.options[field.field]] ? 'Skift' : 'Vælg' }}
+            </button>
+            <button class="itk-template-extension--button-remove" data-ng-if="slide.media[slide.options[field.field]]"
+                    data-ng-click="removeMedia(field.field)">
+              Fjern
             </button>
           </div>
         </div>
