@@ -2,6 +2,11 @@
 
 ## In develop
 
+## 1.1.10
+
+* Fixed itk-media-picker styling.
+* Added remove media button itk-media-picker.
+
 ## 1.1.9
 
 * Minified js.
