@@ -2,6 +2,8 @@
 
 ## In develop
 
+* Updated npm packages.
+
 ## 1.1.10
 
 * Fixed itk-media-picker styling.
