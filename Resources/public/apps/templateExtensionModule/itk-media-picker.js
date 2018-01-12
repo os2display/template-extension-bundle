@@ -196,14 +196,6 @@ angular.module('templateExtensionModule').directive('itkMediaPicker', [
               });
             }
           );
-
-          var notAllSuccess = data.queue.find(function (item, index) {
-            return !item.isSuccess;
-          });
-
-          if (!notAllSuccess) {
-            scope.close();
-          }
         });
       },
       templateUrl: '/bundles/itktemplateextension/apps/templateExtensionModule/itk-media-picker.html'

@@ -2,6 +2,10 @@
 
 ## In develop
 
+## 1.1.11
+
+* Changed button styling to remove border.
+* Removed modal close on media upload for itk-media-picker.
 * Updated npm packages.
 
 ## 1.1.10
