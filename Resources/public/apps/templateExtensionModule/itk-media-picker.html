@@ -16,6 +16,8 @@
           <div class="itk-template-extension--tool-section">
             <h2 class="itk-template-extension--tool-headline">{{field.name}}</h2>
 
+            <p data-ng-if="field.description">{{field.description}}</p>
+
             <img class="itk-template-extension--media-picker-image" data-ng-src="{{slide.media[slide.options[field.field]].urls.default_landscape}}" data-ng-if="slide.media[slide.options[field.field]].media_type === 'image'">
             <button class="itk-template-extension--button"
                     data-ng-click="backgroundPicker(field.field, field.media_type)">

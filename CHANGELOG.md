@@ -2,6 +2,10 @@
 
 ## In develop
 
+## 1.1.12
+
+* Added description to fields.
+
 ## 1.1.11
 
 * Changed button styling to remove border.
