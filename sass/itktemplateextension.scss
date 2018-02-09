@@ -73,6 +73,19 @@
     margin-bottom: 1em;
   }
 
+  &--block {
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  &--tool-description {
+    border: 1px solid #ddd;
+    display: block;
+    border-radius: .4em;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+
   &--button,
   &--button-remove {
     background-color: #357fd1;
