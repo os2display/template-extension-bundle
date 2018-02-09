@@ -2,6 +2,10 @@
 
 ## In develop
 
+## 1.1.13
+
+* Added classes.
+
 ## 1.1.12
 
 * Added description to fields.
