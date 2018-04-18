@@ -4,8 +4,7 @@
  * configurable:
  *   tool.config.fontsize_enabled: true/false (default: true)
  */
-angular.module('templateExtensionModule').directive('itkRichText', [
-  '$timeout', function ($timeout) {
+angular.module('templateExtensionModule').directive('itkRichText', [function () {
     return {
       restrict: 'E',
       replace: true,
@@ -14,7 +13,24 @@ angular.module('templateExtensionModule').directive('itkRichText', [
         close: '&',
         tool: "="
       },
-      link: function (scope, element, attrs) {
+      link: function (scope) {
+        // Defaults.
+        scope.tools = {
+            italics: true,
+            bold: true,
+            h1: true,
+            h2: true,
+            list_bullet: true,
+            list_ordered: true,
+            clean: true
+        };
+
+        if (scope.tool.config) {
+          if (scope.tool.config.tools) {
+            scope.tools = Object.assign(scope.tools, scope.tool.config.tools);
+          }
+        }
+
         // Show fontsize editor unless it is explicitly disabled in tool.config.
         scope.fontsizeEnabled = scope.tool.config === undefined || scope.tool.config.fontsize_enabled;
 
