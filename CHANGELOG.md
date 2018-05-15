@@ -2,6 +2,11 @@
 
 ## In develop
 
+## 1.1.14
+
+* Made selected tools configurable.
+* Removed os2display requirements.
+
 ## 1.1.13
 
 * Added classes.
