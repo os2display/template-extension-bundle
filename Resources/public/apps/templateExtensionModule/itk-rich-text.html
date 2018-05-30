@@ -20,22 +20,22 @@
                              on-editor-created="editorCreated(editor)">
               <ng-quill-toolbar style="text-align: left">
                 <div>
-              <span class="ql-formats">
-                <button class="ql-italic"
-                        ng-attr-title="{{'Italics'}}"></button>
-                <button class="ql-bold" ng-attr-title="{{'Bold'}}"></button>
-              </span>
-                  <span class="ql-formats">
-                <button type="button" class="ql-list" value="ordered"></button>
-                <button type="button" class="ql-list" value="bullet"></button>
-              </span>
-                  <span class="ql-formats">
-                <button type="button" class="ql-header" value="1"></button>
-                <button type="button" class="ql-header" value="2"></button>
-              </span>
-                  <span class="ql-formats">
-                <button type="button" class="ql-clean"></button>
-              </span>
+                  <span class="ql-formats" data-ng-if="tools.italics || tools.bold">
+                    <button class="ql-italic"
+                            ng-attr-title="{{'Italics'}}" data-ng-if="tools.italics"></button>
+                    <button class="ql-bold" ng-attr-title="{{'Bold'}}" data-ng-if="tools.bold"></button>
+                  </span>
+                  <span class="ql-formats" data-ng-if="tools.list_ordered || tools.list_bullet">
+                    <button type="button" class="ql-list" value="ordered" data-ng-if="tools.list_ordered"></button>
+                    <button type="button" class="ql-list" value="bullet" data-ng-if="tools.list_bullet"></button>
+                  </span>
+                  <span class="ql-formats" data-ng-if="tools.h1 || tools.h2">
+                    <button type="button" class="ql-header" value="1" data-ng-if="tools.h1"></button>
+                    <button type="button" class="ql-header" value="2" data-ng-if="tools.h2"></button>
+                  </span>
+                  <span class="ql-formats" data-ng-if="tools.clean">
+                    <button type="button" class="ql-clean" data-ng-if="tools.clean"></button>
+                  </span>
                 </div>
               </ng-quill-toolbar>
             </ng-quill-editor>
