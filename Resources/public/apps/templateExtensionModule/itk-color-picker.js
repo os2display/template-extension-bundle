@@ -25,7 +25,7 @@ angular.module('templateExtensionModule').directive('itkColorPicker', [
           }
         );
       },
-      templateUrl: '/bundles/itktemplateextension/apps/templateExtensionModule/itk-color-picker.html'
+      templateUrl: '/bundles/os2displaytemplateextension/apps/templateExtensionModule/itk-color-picker.html'
     };
   }
 ]);

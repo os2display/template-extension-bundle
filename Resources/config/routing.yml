@@ -1,3 +1,3 @@
 itk_template_extension.theme_colors:
     path:     /api/itk_template_extension/theme_colors
-    defaults: { _controller: ItkTemplateExtensionBundle:Default:themeColors }
+    defaults: { _controller: Os2displaytemplateextensionBundle:Default:themeColors }

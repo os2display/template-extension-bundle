@@ -1,6 +1,6 @@
 <?php
 
-namespace Itk\TemplateExtensionBundle\DependencyInjection;
+namespace Os2Display\TemplateExtensionBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Os2Display\CoreBundle\DependencyInjection\Os2DisplayBaseExtension;
@@ -10,7 +10,7 @@ use Os2Display\CoreBundle\DependencyInjection\Os2DisplayBaseExtension;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class ItkTemplateExtensionExtension extends Os2DisplayBaseExtension
+class Os2DisplayTemplateExtensionExtension extends Os2DisplayBaseExtension
 {
     /**
      * {@inheritdoc}

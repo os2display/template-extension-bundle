@@ -62,7 +62,7 @@ angular.module('templateExtensionModule').directive('itkRichText', [function () 
           editor.clipboard.dangerouslyPasteHTML(scope.slide.options.text);
         };
       },
-      templateUrl: '/bundles/itktemplateextension/apps/templateExtensionModule/itk-rich-text.html'
+      templateUrl: '/bundles/os2displaytemplateextension/apps/templateExtensionModule/itk-rich-text.html'
     };
   }
 ]);

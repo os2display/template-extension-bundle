@@ -198,7 +198,7 @@ angular.module('templateExtensionModule').directive('itkMediaPicker', [
           );
         });
       },
-      templateUrl: '/bundles/itktemplateextension/apps/templateExtensionModule/itk-media-picker.html'
+      templateUrl: '/bundles/os2displaytemplateextension/apps/templateExtensionModule/itk-media-picker.html'
     };
   }
 ]);
