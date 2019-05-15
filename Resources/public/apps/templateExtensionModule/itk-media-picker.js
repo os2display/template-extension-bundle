@@ -12,7 +12,7 @@
  * "tools": [
  *   {
  *     "name": "Medier",
- *     "id": "itk-media-editor",
+ *     "id": "itk-media-picker",
  *     "config": {
  *       "fields": [
  *         {

@@ -1,3 +1,13 @@
+/**
+ * "tools": [
+ *   {
+ *     "name": "Color picker",
+ *     "id": "itk-color-picker",
+ *     "config": {
+ *       "colorPath": "/api/os2display_template_extension/theme_colors"
+ *     }
+ *   }
+ */
 angular.module('templateExtensionModule').directive('itkColorPicker', [
   '$timeout', '$http', function ($timeout, $http) {
     return {
@@ -9,6 +19,10 @@ angular.module('templateExtensionModule').directive('itkColorPicker', [
         tool: "="
       },
       link: function (scope) {
+        var config = scope.tool.config;
+
+        var colorPath = config.colorPath ? config.colorPath : '/api/os2display_template_extension/theme_colors';
+
         scope.selectColor = function (field, color) {
           scope.slide.options[field] = color.value;
         };
@@ -17,7 +31,7 @@ angular.module('templateExtensionModule').directive('itkColorPicker', [
 
         scope.fields = scope.tool.config.fields;
 
-        $http.get('/api/itk_template_extension/theme_colors').then(
+        $http.get(colorPath).then(
           function success(response) {
             $timeout(function () {
               scope.themes = response.data;

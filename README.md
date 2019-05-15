@@ -1,4 +1,4 @@
-# itk-os2display/template-extension-bundle
+# os2display/template-extension-bundle
 
 Extends os2display with the following slide editors:
 
@@ -6,5 +6,3 @@ Extends os2display with the following slide editors:
 * itk-media-picker
 * itk-rich-text
 * itk-text-array
-
-## 
