@@ -1,5 +1,5 @@
 {
-    "name": "itk-os2display/template-extension-bundle",
+    "name": "os2display/template-extension-bundle",
     "description": "Os2Display Template Extension Bundle contains tools for templates.",
     "type": "symfony-bundle",
     "require": {

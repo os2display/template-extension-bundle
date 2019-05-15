@@ -1,5 +1,9 @@
 # Template Extension Bundle
 
+## 2.0.1
+
+* Changed composer name.
+
 ## 2.0.0
 
 * Renamed to Os2DisplayTemplateExtensionBundle.
