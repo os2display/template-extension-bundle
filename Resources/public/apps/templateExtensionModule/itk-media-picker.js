@@ -12,7 +12,7 @@
  * "tools": [
  *   {
  *     "name": "Medier",
- *     "id": "itk-media-editor",
+ *     "id": "itk-media-picker",
  *     "config": {
  *       "fields": [
  *         {
@@ -198,7 +198,7 @@ angular.module('templateExtensionModule').directive('itkMediaPicker', [
           );
         });
       },
-      templateUrl: '/bundles/itktemplateextension/apps/templateExtensionModule/itk-media-picker.html'
+      templateUrl: '/bundles/os2displaytemplateextension/apps/templateExtensionModule/itk-media-picker.html'
     };
   }
 ]);

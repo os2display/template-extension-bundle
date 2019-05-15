@@ -1,26 +1,25 @@
 assets:
   js:
-    - bundles/itktemplateextension/assets/libs/quill.min.js
-    - bundles/itktemplateextension/assets/libs/ng-quill.min.js
+    - bundles/os2displaytemplateextension/assets/libs/quill.min.js
+    - bundles/os2displaytemplateextension/assets/libs/ng-quill.min.js
   css:
-    - bundles/itktemplateextension/css/quill.core.css
-    - bundles/itktemplateextension/css/quill.snow.css
-    - bundles/itktemplateextension/assets/build/itktemplateextension.min.css
+    - bundles/os2displaytemplateextension/css/quill.core.css
+    - bundles/os2displaytemplateextension/css/quill.snow.css
+    - bundles/os2displaytemplateextension/assets/build/os2displaytemplateextension.min.css
   js_prod_assets:
-    - bundles/itktemplateextension/assets/libs/quill.min.js
-    - bundles/itktemplateextension/assets/libs/ng-quill.min.js
+    - bundles/os2displaytemplateextension/assets/libs/quill.min.js
+    - bundles/os2displaytemplateextension/assets/libs/ng-quill.min.js
   js_prod:
-    - bundles/itktemplateextension/assets/build/itktemplateextension.min.js
+    - bundles/os2displaytemplateextension/assets/build/os2displaytemplateextension.min.js
 
 modules:
   templateExtensionModule:
     files:
-      - bundles/itktemplateextension/apps/templateExtensionModule/module.js
-      - bundles/itktemplateextension/apps/templateExtensionModule/itk-rich-text.js
-      - bundles/itktemplateextension/apps/templateExtensionModule/itk-koba-resource-picker.js
-      - bundles/itktemplateextension/apps/templateExtensionModule/itk-text-array.js
-      - bundles/itktemplateextension/apps/templateExtensionModule/itk-color-picker.js
-      - bundles/itktemplateextension/apps/templateExtensionModule/itk-media-picker.js
+      - bundles/os2displaytemplateextension/apps/templateExtensionModule/module.js
+      - bundles/os2displaytemplateextension/apps/templateExtensionModule/itk-rich-text.js
+      - bundles/os2displaytemplateextension/apps/templateExtensionModule/itk-text-array.js
+      - bundles/os2displaytemplateextension/apps/templateExtensionModule/itk-color-picker.js
+      - bundles/os2displaytemplateextension/apps/templateExtensionModule/itk-media-picker.js
 
 apps:
   ikApp:

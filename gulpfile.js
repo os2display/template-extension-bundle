@@ -1,4 +1,4 @@
-var gulp = require('gulp-help')(require('gulp'));
+var gulp = require('gulp');
 
 // Plugins.
 var jshint = require('gulp-jshint');
@@ -29,13 +29,13 @@ var banner = [
 /**
  * Process SCSS using libsass
  */
-gulp.task('sass', 'Compile the sass .', function () {
+gulp.task('sass', function () {
   'use strict';
 
   var adminBuildDir = 'Resources/public/assets/build';
   var sassPath = 'sass/*.scss';
 
-  gulp.src(sassPath)
+  return gulp.src(sassPath)
     .pipe(sass({
       outputStyle: 'compressed'
     }).on('error', sass.logError))
@@ -70,14 +70,14 @@ var adminJsPath = (function () {
   });
 
   return jsFiles.map(function (file) {
-    return 'Resources/public/' + file.split('bundles/itktemplateextension/')[1];
+    return 'Resources/public/' + file.split('bundles/os2displaytemplateextension/')[1];
   });
 }());
 
 /**
  * Run Javascript through JSHint.
  */
-gulp.task('jshint', 'Runs JSHint on js', function () {
+gulp.task('jshint', function () {
   return gulp.src(adminJsPath)
   .pipe(jshint())
   .pipe(jshint.reporter(stylish));
@@ -86,9 +86,9 @@ gulp.task('jshint', 'Runs JSHint on js', function () {
 /**
  * Build single app.js file.
  */
-gulp.task('js', 'Build all custom js files into one minified js file.', function () {
+gulp.task('js', function () {
     return gulp.src(adminJsPath)
-    .pipe(concat('itktemplateextension.js'))
+    .pipe(concat('os2displaytemplateextension.js'))
     .pipe(ngAnnotate())
     .pipe(uglify())
     .pipe(rename({extname: ".min.js"}))
@@ -100,8 +100,10 @@ gulp.task('js', 'Build all custom js files into one minified js file.', function
 /**
  * Build single app.js file.
  */
-gulp.task('js-src', 'Report all source files for "js" task.', function () {
+gulp.task('js-src', function (done) {
   adminJsPath.forEach(function (path) {
     process.stdout.write(path + '\n');
   });
+
+  done();
 });

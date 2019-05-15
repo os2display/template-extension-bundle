@@ -1,6 +1,9 @@
 # Template Extension Bundle
 
-## In develop
+## 2.0.0
+
+* Renamed to Os2DisplayTemplateExtensionBundle.
+* Removed itk-koba-resource-picker tool.
 
 ## 1.1.14
 

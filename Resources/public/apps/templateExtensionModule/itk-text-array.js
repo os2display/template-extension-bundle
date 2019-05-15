@@ -25,7 +25,7 @@ angular.module('templateExtensionModule').directive('itkTextArray', [
           scope.slide.options.texts.splice(index, 1);
         };
       },
-      templateUrl: '/bundles/itktemplateextension/apps/templateExtensionModule/itk-text-array.html'
+      templateUrl: '/bundles/os2displaytemplateextension/apps/templateExtensionModule/itk-text-array.html'
     };
   }
 ]);
