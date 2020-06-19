@@ -1,5 +1,9 @@
 # Template Extension Bundle
 
+## 2.1.0
+
+* Added darkmode tool.
+
 ## 2.0.1
 
 * Changed composer name.
