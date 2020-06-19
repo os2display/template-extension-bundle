@@ -20,6 +20,7 @@ modules:
       - bundles/os2displaytemplateextension/apps/templateExtensionModule/itk-text-array.js
       - bundles/os2displaytemplateextension/apps/templateExtensionModule/itk-color-picker.js
       - bundles/os2displaytemplateextension/apps/templateExtensionModule/itk-media-picker.js
+      - bundles/os2displaytemplateextension/apps/templateExtensionModule/darkmode.js
 
 apps:
   ikApp:

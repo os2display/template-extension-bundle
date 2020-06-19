@@ -6,3 +6,4 @@ Extends os2display with the following slide editors:
 * itk-media-picker
 * itk-rich-text
 * itk-text-array
+* darkmode
